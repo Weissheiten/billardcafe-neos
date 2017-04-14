@@ -1,5 +1,7 @@
 # Docker based development setup
 
+This setup is based on the work of Benedikt Schmitz (https://github.com/egobude/docker-neos-template)
+
 Template for a docker based Neos CMS development setup.
 
 ## Links
