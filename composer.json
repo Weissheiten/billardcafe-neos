@@ -11,16 +11,10 @@
         "docs": "http://neos.readthedocs.org/",
         "source": "https://github.com/neos/neos-base-distribution"
     },
-    "config": {
-        "vendor-dir": "Packages/Libraries",
-        "bin-dir": "bin",
-        "data-dir": "/var/www/web6/html/.composer",
-        "cache-dir": "/var/www/web6/html/cmptmp"
-    },
     "repositories": [
        {
           "type": "vcs",
-          "url": "https://Weissheiten@bitbucket.org/Weissheiten/billardcafe.home.git"
+          "url": "git@bitbucket.org:Weissheiten/billardcafe.home.git"
        },
        {
           "type": "vcs",
