@@ -11,6 +11,10 @@
         "docs": "http://neos.readthedocs.org/",
         "source": "https://github.com/neos/neos-base-distribution"
     },
+    "config": {
+      "vendor-dir": "Packages/Libraries",
+      "bin-dir": "bin"
+    },
     "repositories": [
        {
           "type": "vcs",
