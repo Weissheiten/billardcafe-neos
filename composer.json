@@ -38,9 +38,9 @@
         }
     ],
     "require": {
-        "neos/neos": "~3.0.0",
-        "neos/nodetypes": "~3.0.0",
-        "neos/site-kickstarter": "~3.0.0",
+        "neos/neos": "~3.1.0",
+        "neos/nodetypes": "~3.1.0",
+        "neos/site-kickstarter": "~3.1.0",
         "neos/seo": "~2.0.0",
         "neos/setup": "~4.0.0",
         "flowpack/neos-frontendlogin": "~3.0",
