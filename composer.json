@@ -1,73 +1,71 @@
 {
-  "name": "neos/neos-base-distribution",
-  "description": "Neos Base Distribution",
-  "license": "GPL-3.0+",
-  "support": {
-    "email": "hello@neos.io",
-    "slack": "http://slack.neos.io/",
-    "forum": "https://discuss.neos.io/",
-    "wiki": "https://discuss.neos.io/c/the-neos-project/project-documentation",
-    "issues": "https://github.com/neos/neos-development-collection/issues",
-    "docs": "http://neos.readthedocs.org/",
-    "source": "https://github.com/neos/neos-base-distribution"
-  },
-  "config": {
-    "vendor-dir": "Packages/Libraries",
-    "bin-dir": "bin"
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://Weissheiten@bitbucket.org/Weissheiten/billardcafe.home.git"
+    "name": "neos/neos-base-distribution",
+    "description": "Neos Base Distribution",
+    "license": "GPL-3.0+",
+    "support": {
+        "email": "hello@neos.io",
+        "slack": "http://slack.neos.io/",
+        "forum": "https://discuss.neos.io/",
+        "wiki": "https://discuss.neos.io/c/the-neos-project/project-documentation",
+        "issues": "https://github.com/neos/neos-development-collection/issues",
+        "docs": "http://neos.readthedocs.org/",
+        "source": "https://github.com/neos/neos-base-distribution"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/Weissheiten/Weissheiten.Neos.News.git"
+    "config": {
+        "vendor-dir": "Packages/Libraries",
+        "bin-dir": "bin"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/Weissheiten/Weissheiten.Neos.InstagramMedia.git"
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://Weissheiten@bitbucket.org/Weissheiten/billardcafe.home.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Weissheiten/Weissheiten.Neos.News.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Weissheiten/Weissheiten.Neos.InstagramMedia.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Weissheiten/Weissheiten.OAuth2.ClientInstagram.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Weissheiten/Weissheiten.Flow.WiFiGuestCredentialsProvider.git"
+        }
+    ],
+    "require": {
+        "neos/neos": "~3.0.0",
+        "neos/nodetypes": "~3.0.0",
+        "neos/site-kickstarter": "~3.0.0",
+        "neos/seo": "~2.0.0",
+        "neos/setup": "~4.0.0",
+        "flowpack/neos-frontendlogin": "~3.0",
+        "neos/redirecthandler-neosadapter": "~2.0",
+        "neos/redirecthandler-databasestorage": "~2.0",
+        "neos/googleanalytics": "~2.0.0",
+        "moc/notfound": "~3.0",
+        "flowpack/oauth2-client": "dev-master",
+        "weissheiten/oauth2-clientinstagram": "dev-master",
+        "weissheiten/neos-bootstrap": "dev-master",
+        "weissheiten/neos-news": "dev-master",
+        "weissheiten/billardcafe-home": "dev-master",
+        "networkteam/neos-mailobfuscator": "~2.0.0",
+        "weissheiten/neos-instagrammedia": "dev-master",
+        "weissheiten/neos-nodemigration": "^1.0",
+        "neos/swiftmailer": "~6.0.0",
+        "weissheiten/flow-wifiguestcredentialsprovider": "~1.0.0"
     },
-    {
-      "type": "vcs",
-      "url": "https://github.com/Weissheiten/Weissheiten.OAuth2.ClientInstagram.git"
+    "replace": {
+        "typo3/neos-base-distribution": "self.version"
+    },
+    "scripts": {
+        "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
+        "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
+        "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
     }
-  ],
-  "require": {
-    "neos/neos": "~3.0.0",
-    "neos/nodetypes": "~3.0.0",
-    "neos/demo": "~3.0.0",
-    "neos/site-kickstarter": "~3.0.0",
-
-    "neos/seo": "~2.0",
-    "neos/setup": "~4.0",
-    "flowpack/neos-frontendlogin": "~3.0",
-    "neos/redirecthandler-neosadapter": "~2.0",
-    "neos/redirecthandler-databasestorage": "~2.0",
-    "weissheiten/neos-bootstrap": "dev-master",
-    "weissheiten/neos-news": "dev-master",
-    "weissheiten/billardcafe-home": "dev-master",
-    "weissheiten/neos-instagrammedia": "dev-master",
-    "flowpack/oauth2-client": "dev-master",
-    "weissheiten/oauth2-clientinstagram": "dev-master"
-  },
-  "require-dev": {
-    "neos/buildessentials": "~4.0.0",
-    "mikey179/vfsstream": "~1.6",
-    "phpunit/phpunit": "~5.4.0",
-    "symfony/css-selector": "~2.0",
-    "neos/behat": "dev-master"
-  },
-  "replace": {
-    "typo3/neos-base-distribution": "self.version"
-  },
-  "suggest": {
-    "ext-pdo_sqlite": "For running functional tests out-of-the-box this is required"
-  },
-  "scripts": {
-    "post-update-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
-    "post-install-cmd": "Neos\\Flow\\Composer\\InstallerScripts::postUpdateAndInstall",
-    "post-package-update": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall",
-    "post-package-install": "Neos\\Flow\\Composer\\InstallerScripts::postPackageUpdateAndInstall"
-  }
 }
