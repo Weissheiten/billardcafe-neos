@@ -35,6 +35,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/Weissheiten/Weissheiten.Flow.WiFiGuestCredentialsProvider.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Weissheiten/Flowpack.OAuth2.Client.git"
         }
     ],
     "require": {
@@ -48,7 +52,7 @@
         "neos/redirecthandler-databasestorage": "~2.0",
         "neos/googleanalytics": "~2.0.0",
         "moc/notfound": "~3.0",
-        "flowpack/oauth2-client": "dev-master",
+        "flowpack/oauth2-client": "dev-Neos3",
         "weissheiten/oauth2-clientinstagram": "dev-master",
         "weissheiten/neos-bootstrap": "dev-master",
         "weissheiten/neos-news": "dev-master",
