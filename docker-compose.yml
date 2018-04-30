@@ -6,9 +6,11 @@ services:
     image: "zeroboh/php:7.1-fpm-alpine"
     links:
       - "mariadb"
-      - "redis"
+   #   - "redis"
+      - "mail"
     volumes:
-      - "/c/Users/FloLeBlanc/Documents/Kitematic/billardcafe-neos:/data/"
+      - "~/Documents/Kitematic/billardcafe-neos:/data/"
+       #- "/c/Users/FloLeBlanc/Documents/Kitematic/billardcafe-neos:/data/"
 
   nginx:
     image: "zeroboh/nginx:1.11-alpine"
@@ -17,19 +19,27 @@ services:
     links:
       - "php"
     volumes:
-      - "/c/Users/FloLeBlanc/Documents/Kitematic/billardcafe-neos:/data/"
-      - "/c/Users/FloLeBlanc/Documents/Kitematic/billardcafe-neos/Configuration/Docker/default.conf:/etc/nginx/conf.d/default.conf"
+      - "~/Documents/Kitematic/billardcafe-neos:/data/"
+      - "~/Documents/Kitematic/billardcafe-neos/Configuration/Docker/default.conf:/etc/nginx/conf.d/default.conf"
     environment:
       FLOW_PATH_TEMPORARY_BASE: "/tmp"
 
-  redis:
-     image: "zeroboh/redis:3.2-alpine"
+  #redis:
+  #   image: "zeroboh/redis:3.2-alpine"
 
   mariadb:
-    image: "zeroboh/mariadb:10.1-debian-jessie"
+    image: "mariadb"
     command: "--character-set-server=utf8 --collation-server=utf8_unicode_ci"
     environment:
       MYSQL_ROOT_PASSWORD: "neos"
       MYSQL_DATABASE: "neos"
       MYSQL_USER: "neos"
       MYSQL_PASSWORD: "neos"
+
+  mail:
+    image: mailhog/mailhog
+    ports:
+      - 8025:8025
+    environment:
+      - VIRTUAL_HOST=mail.neos
+      - VIRTUAL_PORT=8025

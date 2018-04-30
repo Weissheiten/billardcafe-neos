@@ -39,29 +39,37 @@
         {
             "type": "vcs",
             "url": "https://github.com/Weissheiten/Flowpack.OAuth2.Client.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/Weissheiten/coaching-neospackagereactjs.git"
         }
     ],
     "require": {
-        "neos/neos": "~3.1.0",
-        "neos/nodetypes": "~3.1.0",
-        "neos/site-kickstarter": "~3.1.0",
+        "neos/neos": "~4.0.0",
+        "neos/nodetypes": "~4.0.0",
+        "neos/site-kickstarter": "~4.0.0",
         "neos/seo": "~2.0.0",
         "neos/setup": "~4.0.0",
         "flowpack/neos-frontendlogin": "~3.0",
         "neos/redirecthandler-neosadapter": "~2.0",
         "neos/redirecthandler-databasestorage": "~2.0",
-        "neos/googleanalytics": "~2.0.0",
         "moc/notfound": "~3.0",
         "flowpack/oauth2-client": "dev-Neos3",
         "weissheiten/oauth2-clientinstagram": "dev-master",
         "weissheiten/neos-bootstrap": "dev-master",
         "weissheiten/neos-news": "dev-master",
         "weissheiten/billardcafe-home": "dev-master",
-        "networkteam/neos-mailobfuscator": "~2.0.0",
         "weissheiten/neos-instagrammedia": "dev-master",
-        "weissheiten/neos-nodemigration": "^1.0",
         "neos/swiftmailer": "~6.0.0",
-        "weissheiten/flow-wifiguestcredentialsprovider": "~1.0.0"
+        "weissheiten/flow-wifiguestcredentialsprovider": "dev-Neos",
+        "neos/neos-ui": "~1.0.0",
+        "neos/neos-ui-compiled": "~1.0.0",
+        "weissheiten/coaching-neospackagereactjs": "dev-master",
+        "moc/imageoptimizer": "~3.0",
+        "ttree/script": "^3.0",
+        "ttree/stylesheet": "^3.0",
+        "flowpack/neos-matomo": "~3.0"
     },
     "replace": {
         "typo3/neos-base-distribution": "self.version"
