@@ -1,0 +1,57 @@
+
+Neos:
+  Imagine:
+    driver: Imagick
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        dbname: neos
+        user: neos
+        password: neos
+        host: neos3-mariadb
+      doctrine:
+        sqlLogger: Neos\Flow\Persistence\Doctrine\Logging\SqlLogger
+  SwiftMailer:
+    transport:
+      type: Swift_SmtpTransport
+      options:
+        host: mail
+        port: 1025
+MOC:
+  ImageOptimizer:
+    useGlobalBinary: true
+    globalBinaryPath: /usr/bin/
+    formats:
+      image/jpeg:
+        enabled: true
+        useGlobalBinary: false
+        library: jpegtran
+        binaryPath: jpegtran
+        arguments: '${''-copy none -optimize '' + (progressive ? ''-progressive '' : '''') + ''-outfile '' + file + '' '' + file}'
+        parameters:
+          progressive: true
+      image/png:
+        enabled: true
+        useGlobalBinary: false
+        library: optipng
+        binaryPath: optipng
+        arguments: '${''-o'' + optimizationLevel + '' -strip all -out '' + file + '' '' + file}'
+        parameters:
+          optimizationLevel: 2
+      image/gif:
+        enabled: false
+        useGlobalBinary: false
+        library: gifsicle
+        binaryPath: gifsicle/vendor/gifsicle
+        arguments: '${''--batch -O'' + optimizationLevel + '' '' + file}'
+        parameters:
+          optimizationLevel: 2
+      image/svg+xml:
+        enabled: false
+        useGlobalBinary: false
+        library: svgo
+        binaryPath: svgo/bin/svgo
+        arguments: '${(pretty ? ''--pretty '' : '''') + file}'
+        parameters:
+          pretty: false
