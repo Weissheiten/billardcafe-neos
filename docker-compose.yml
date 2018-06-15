@@ -10,9 +10,9 @@ services:
     links:
       - "neos3-mariadb"
       - "neos3-mail"
-    #volumes:
-    #  - "~/Documents/Kitematic/billardcafe-neos:/var/www"
-      #- "~/Documents/Kitematic/billardcafe-neos/Docker/Configuration/default.conf:/etc/nginx/conf.d/default.conf"
+    volumes:
+      - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
+    #  - "./app/Data/Logs:/app/Data/Logs"
 
   #neos3-php:
   #  image: weissheiten-neos

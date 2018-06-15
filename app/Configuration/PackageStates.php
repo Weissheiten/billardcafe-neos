@@ -517,6 +517,27 @@ return array (
       array (
       ),
     ),
+    'symfony/polyfill-ctype' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'symfony.polyfillctype',
+      'packagePath' => 'Libraries/symfony/polyfill-ctype/',
+      'composerName' => 'symfony/polyfill-ctype',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Symfony\\Polyfill\\Ctype\\' => '',
+        ),
+        'files' => 
+        array (
+          0 => 'bootstrap.php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'symfony/yaml' => 
     array (
       'state' => 'active',
