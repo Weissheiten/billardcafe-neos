@@ -12,7 +12,7 @@ services:
       - "neos3-mail"
     volumes:
       - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
-    #  - "./app/Data/Logs:/app/Data/Logs"
+      - "./app/Data/Logs:/app/Data/Logs"
 
   #neos3-php:
   #  image: weissheiten-neos

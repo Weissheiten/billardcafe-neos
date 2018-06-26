@@ -5,3 +5,5 @@
 /composer.lock
 /app
 !/app/Configuration
+!/app/composer.json
+!/app/composer.lock
