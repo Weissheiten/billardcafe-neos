@@ -28,7 +28,7 @@ MOC:
         useGlobalBinary: false
         library: jpegtran
         binaryPath: jpegtran
-       arguments: '${''-copy none -optimize '' + (progressive ? ''-progressive '' : '''') + ''-outfile '' + file + '' '' + file}'
+        arguments: '${''-copy none -optimize '' + (progressive ? ''-progressive '' : '''') + ''-outfile '' + file + '' '' + file}'
         parameters:
           progressive: true
       image/png:

@@ -1524,6 +1524,23 @@ return array (
       array (
       ),
     ),
+    'weissheiten/neos-mediatools' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Weissheiten.Neos.MediaTools',
+      'packagePath' => 'Application/Weissheiten.Neos.MediaTools/',
+      'composerName' => 'weissheiten/neos-mediatools',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Weissheiten\\Neos\\MediaTools\\' => 'Classes/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'weissheiten/neos-nodemigration' => 
     array (
       'state' => 'active',
