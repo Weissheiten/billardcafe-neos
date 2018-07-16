@@ -3,8 +3,6 @@ version: "2"
 services:
   neos3-main:
     image: weissheiten-neos
-    #volumes:
-    #  - "~/Documents/Kitematic/billardcafe-neos:/app/"
     ports:
       - "80:80"
     links:
@@ -12,12 +10,14 @@ services:
       - "neos3-mail"
     volumes:
       - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
+      - "./app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider:/app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider"
+      - "./app/Packages/Application/Weissheiten.Neos.Bootstrap:/app/Packages/Application/Weissheiten.Neos.Bootstrap:"
+      - "./app/Packages/Application/Weissheiten.Neos.MediaTools:/app/Packages/Application/Weissheiten.Neos.MediaTools"
+      - "./app/Packages/Application/Weissheiten.Neos.News:/app/Packages/Application/Weissheiten.Neos.News"
+      - "./app/Packages/Application/Weissheiten.Neos.NodeMigration:/app/Packages/Application/Weissheiten.Neos.NodeMigration"
+      - "./app/Packages/Application/Weissheiten.OAuth2.ClientInstagram:/app/Packages/Application/Weissheiten.OAuth2.ClientInstagram"
+      - "./app/Packages/Plugins/Weissheiten.Neos.InstagramMedia:/app/Packages/Plugins/Weissheiten.Neos.InstagramMedia"
       - "./app/Data/Logs:/app/Data/Logs"
-
-  #neos3-php:
-  #  image: weissheiten-neos
-  #  volumes:
-  #    - "~/Documents/Kitematic/billardcafe-neos:/data/"
 
   neos3-mariadb:
     image: "mariadb"
