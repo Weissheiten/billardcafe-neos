@@ -62,7 +62,7 @@
         "weissheiten/billardcafe-home": "dev-master",
         "weissheiten/neos-instagrammedia": "dev-master",
         "neos/swiftmailer": "~6.0.0",
-        "weissheiten/flow-wifiguestcredentialsprovider": "dev-master",
+        "weissheiten/flow-wifiguestcredentialsprovider": "dev-Neos",
         "neos/neos-ui": "~1.0.0",
         "neos/neos-ui-compiled": "~1.0.0",
         "moc/imageoptimizer": "~3.0",

@@ -2,7 +2,7 @@ version: "2"
 
 services:
   neos3-main:
-    image: weissheiten-neos:4.0
+    image: weissheiten-neos:4.0.1
     ports:
       - "80:80"
     links:
