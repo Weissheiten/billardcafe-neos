@@ -2,7 +2,7 @@ version: "2"
 
 services:
   neos4-main:
-    image: weissheiten-neos:4.0.2
+    image: weissheiten-neos:4.0.3
     ports:
       - "80:80"
     links:
@@ -21,7 +21,7 @@ services:
 
   neos4-mariadb:
     image: "mariadb"
-    command: "--character-set-server=utf8 --collation-server=utf8_unicode_ci"
+    command: "--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci"
     environment:
       MYSQL_ROOT_PASSWORD: "neos"
       MYSQL_DATABASE: "neos"
