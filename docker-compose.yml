@@ -1,8 +1,8 @@
 version: "2"
 
 services:
-  neos3-main:
-    image: weissheiten-neos:4.0.1
+  neos4-main:
+    image: weissheiten-neos:4.0.2
     ports:
       - "80:80"
     links:
@@ -19,7 +19,7 @@ services:
       - "./app/Packages/Plugins/Weissheiten.Neos.InstagramMedia:/app/Packages/Plugins/Weissheiten.Neos.InstagramMedia"
       - "./app/Data/Logs:/app/Data/Logs"
 
-  neos3-mariadb:
+  neos4-mariadb:
     image: "mariadb"
     command: "--character-set-server=utf8 --collation-server=utf8_unicode_ci"
     environment:
@@ -28,7 +28,7 @@ services:
       MYSQL_USER: "neos"
       MYSQL_PASSWORD: "neos"
 
-  neos3-mail:
+  neos4-mail:
     image: mailhog/mailhog
     ports:
       - 8025:8025
