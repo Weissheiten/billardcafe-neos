@@ -6,8 +6,8 @@ services:
     ports:
       - "80:80"
     links:
-      - "neos3-mariadb"
-      - "neos3-mail"
+      - "neos4-mariadb"
+      - "neos4-mail"
     volumes:
       - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
       - "./app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider:/app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider"
