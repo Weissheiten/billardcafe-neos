@@ -1,26 +1,28 @@
-FROM quay.io/yeebase/nginx-php-fpm:php71
+FROM quay.io/yeebase/neos-base:7.2
 
 RUN apt-get update
 RUN apt-get install vim -y
 
-COPY --chown=1001:1001  /app /app
+COPY --chown=33:33 /app /app
 
-#COPY ./app/ /app/
 RUN apt-get install zip -y
-#RUN apt-get install composer -y
-#RUN composer install -d /app
+##RUN apt-get install composer -y
+##RUN composer install -d /app
 RUN apt-get update
 RUN apt-get install imagemagick -y
-RUN apt-get install  python-software-properties software-properties-common -y
-RUN LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
-RUN apt-get update
-RUN apt-get install php-imagick -y
+RUN apt-get install php7.2-imagick -y
+#RUN apt-get install -y software-properties-common
+
+COPY /DockerBuildConfFiles/policy.xml /etc/ImageMagick-6/policy.xml
 
 RUN rm -rf /var/www && ln -s /app/Web /var/www && rm -Rf /app/Data/Temporary
+
+RUN mkdir /tmp/php
+
 #&& \
 #    cp /app/Configuration/Development/Settings.yaml /app/Configuration/Settings.yaml && \
 #    cp /app/Configuration/Development/Caches.yaml /app/Configuration/Caches.yaml
 
 #COPY ./app/Configuration/Settings.yaml /app/Configuration/Settings.yaml
 #COPY ./app/Configuration/Caches.yaml /app/Configuration/Caches.yaml
-COPY ./default.conf /etc/nginx/sites-enabled/
+#COPY ./default.conf /etc/nginx/sites-enabled/

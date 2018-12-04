@@ -258,9 +258,26 @@ return array (
       'composerName' => 'paragonie/random_compat',
       'autoloadConfiguration' => 
       array (
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'symfony/polyfill-ctype' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'symfony.polyfillctype',
+      'packagePath' => 'Libraries/symfony/polyfill-ctype/',
+      'composerName' => 'symfony/polyfill-ctype',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Symfony\\Polyfill\\Ctype\\' => '',
+        ),
         'files' => 
         array (
-          0 => 'lib/random.php',
+          0 => 'bootstrap.php',
         ),
       ),
       'packageClassInformation' => 
@@ -511,27 +528,6 @@ return array (
         'psr-0' => 
         array (
           'Doctrine\\ORM\\' => 'lib/',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'symfony/polyfill-ctype' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'symfony.polyfillctype',
-      'packagePath' => 'Libraries/symfony/polyfill-ctype/',
-      'composerName' => 'symfony/polyfill-ctype',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Symfony\\Polyfill\\Ctype\\' => '',
-        ),
-        'files' => 
-        array (
-          0 => 'bootstrap.php',
         ),
       ),
       'packageClassInformation' => 
@@ -1309,9 +1305,9 @@ return array (
       'composerName' => 'neos/neos-ui',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Neos\\Neos\\Ui' => 'Classes',
+          'Neos\\Neos\\Ui\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
