@@ -988,17 +988,17 @@ return array (
         'pathAndFilename' => 'Classes/Package.php',
       ),
     ),
-    'swiftmailer/swiftmailer' => 
+    'webmozart/assert' => 
     array (
       'state' => 'active',
-      'packageKey' => 'swiftmailer.swiftmailer',
-      'packagePath' => 'Libraries/swiftmailer/swiftmailer/',
-      'composerName' => 'swiftmailer/swiftmailer',
+      'packageKey' => 'webmozart.assert',
+      'packagePath' => 'Libraries/webmozart/assert/',
+      'composerName' => 'webmozart/assert',
       'autoloadConfiguration' => 
       array (
-        'files' => 
+        'psr-4' => 
         array (
-          0 => 'lib/swift_required.php',
+          'Webmozart\\Assert\\' => 'src/',
         ),
       ),
       'packageClassInformation' => 
@@ -1227,6 +1227,499 @@ return array (
       array (
       ),
     ),
+    'theseer/tokenizer' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'theseer.tokenizer',
+      'packagePath' => 'Libraries/theseer/tokenizer/',
+      'composerName' => 'theseer/tokenizer',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'swiftmailer/swiftmailer' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'swiftmailer.swiftmailer',
+      'packagePath' => 'Libraries/swiftmailer/swiftmailer/',
+      'composerName' => 'swiftmailer/swiftmailer',
+      'autoloadConfiguration' => 
+      array (
+        'files' => 
+        array (
+          0 => 'lib/swift_required.php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/code-unit-reverse-lookup' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.codeunitreverselookup',
+      'packagePath' => 'Libraries/sebastian/code-unit-reverse-lookup/',
+      'composerName' => 'sebastian/code-unit-reverse-lookup',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/diff' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.diff',
+      'packagePath' => 'Libraries/sebastian/diff/',
+      'composerName' => 'sebastian/diff',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/recursion-context' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.recursioncontext',
+      'packagePath' => 'Libraries/sebastian/recursion-context/',
+      'composerName' => 'sebastian/recursion-context',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/exporter' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.exporter',
+      'packagePath' => 'Libraries/sebastian/exporter/',
+      'composerName' => 'sebastian/exporter',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/comparator' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.comparator',
+      'packagePath' => 'Libraries/sebastian/comparator/',
+      'composerName' => 'sebastian/comparator',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/environment' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.environment',
+      'packagePath' => 'Libraries/sebastian/environment/',
+      'composerName' => 'sebastian/environment',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/global-state' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.globalstate',
+      'packagePath' => 'Libraries/sebastian/global-state/',
+      'composerName' => 'sebastian/global-state',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/object-reflector' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.objectreflector',
+      'packagePath' => 'Libraries/sebastian/object-reflector/',
+      'composerName' => 'sebastian/object-reflector',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/object-enumerator' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.objectenumerator',
+      'packagePath' => 'Libraries/sebastian/object-enumerator/',
+      'composerName' => 'sebastian/object-enumerator',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/resource-operations' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.resourceoperations',
+      'packagePath' => 'Libraries/sebastian/resource-operations/',
+      'composerName' => 'sebastian/resource-operations',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'sebastian/version' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'sebastian.version',
+      'packagePath' => 'Libraries/sebastian/version/',
+      'composerName' => 'sebastian/version',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpunit/php-file-iterator' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpunit.phpfileiterator',
+      'packagePath' => 'Libraries/phpunit/php-file-iterator/',
+      'composerName' => 'phpunit/php-file-iterator',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpunit/php-token-stream' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpunit.phptokenstream',
+      'packagePath' => 'Libraries/phpunit/php-token-stream/',
+      'composerName' => 'phpunit/php-token-stream',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpunit/php-text-template' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpunit.phptexttemplate',
+      'packagePath' => 'Libraries/phpunit/php-text-template/',
+      'composerName' => 'phpunit/php-text-template',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpunit/php-code-coverage' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpunit.phpcodecoverage',
+      'packagePath' => 'Libraries/phpunit/php-code-coverage/',
+      'composerName' => 'phpunit/php-code-coverage',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpunit/php-timer' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpunit.phptimer',
+      'packagePath' => 'Libraries/phpunit/php-timer/',
+      'composerName' => 'phpunit/php-timer',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'myclabs/deep-copy' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'myclabs.deepcopy',
+      'packagePath' => 'Libraries/myclabs/deep-copy/',
+      'composerName' => 'myclabs/deep-copy',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'DeepCopy\\' => 'src/DeepCopy/',
+        ),
+        'files' => 
+        array (
+          0 => 'src/DeepCopy/deep_copy.php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phar-io/version' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phario.version',
+      'packagePath' => 'Libraries/phar-io/version/',
+      'composerName' => 'phar-io/version',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phar-io/manifest' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phario.manifest',
+      'packagePath' => 'Libraries/phar-io/manifest/',
+      'composerName' => 'phar-io/manifest',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpdocumentor/reflection-common' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpdocumentor.reflectioncommon',
+      'packagePath' => 'Libraries/phpdocumentor/reflection-common/',
+      'composerName' => 'phpdocumentor/reflection-common',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'phpDocumentor\\Reflection\\' => 
+          array (
+            0 => 'src',
+          ),
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpdocumentor/type-resolver' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpdocumentor.typeresolver',
+      'packagePath' => 'Libraries/phpdocumentor/type-resolver/',
+      'composerName' => 'phpdocumentor/type-resolver',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'phpDocumentor\\Reflection\\' => 
+          array (
+            0 => 'src/',
+          ),
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpdocumentor/reflection-docblock' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpdocumentor.reflectiondocblock',
+      'packagePath' => 'Libraries/phpdocumentor/reflection-docblock/',
+      'composerName' => 'phpdocumentor/reflection-docblock',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'phpDocumentor\\Reflection\\' => 
+          array (
+            0 => 'src/',
+          ),
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpspec/prophecy' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpspec.prophecy',
+      'packagePath' => 'Libraries/phpspec/prophecy/',
+      'composerName' => 'phpspec/prophecy',
+      'autoloadConfiguration' => 
+      array (
+        'psr-0' => 
+        array (
+          'Prophecy\\' => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'phpunit/phpunit' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'phpunit.phpunit',
+      'packagePath' => 'Libraries/phpunit/phpunit/',
+      'composerName' => 'phpunit/phpunit',
+      'autoloadConfiguration' => 
+      array (
+        'classmap' => 
+        array (
+          0 => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'mikey179/vfsStream' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'org.bovigo.vfs',
+      'packagePath' => 'Libraries/mikey179/vfsStream/',
+      'composerName' => 'mikey179/vfsStream',
+      'autoloadConfiguration' => 
+      array (
+        'psr-0' => 
+        array (
+          'org\\bovigo\\vfs\\' => 'src/main/php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'facebook/graph-sdk' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'facebook.graphsdk',
+      'packagePath' => 'Libraries/facebook/graph-sdk/',
+      'composerName' => 'facebook/graph-sdk',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Facebook\\' => 'src/Facebook/',
+        ),
+        'files' => 
+        array (
+          0 => 'src/Facebook/polyfills.php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'neos/kickstarter' => 
     array (
       'state' => 'active',
@@ -1291,23 +1784,6 @@ return array (
         'psr-0' => 
         array (
           'Neos\\Neos\\Ui\\Compiled' => 'Classes/',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'neos/neos-ui' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Neos.Neos.Ui',
-      'packagePath' => 'Application/Neos.Neos.Ui/',
-      'composerName' => 'neos/neos-ui',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Neos\\Neos\\Ui\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
@@ -1514,6 +1990,23 @@ return array (
         'psr-0' => 
         array (
           'Weissheiten\\Neos\\Bootstrap' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'weissheiten/neos-facebookgraphsdk' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Weissheiten.Neos.FacebookGraphSDK',
+      'packagePath' => 'Application/Weissheiten.Neos.FacebookGraphSDK/',
+      'composerName' => 'weissheiten/neos-facebookgraphsdk',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Weissheiten\\Neos\\FacebookGraphSDK\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 

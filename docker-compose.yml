@@ -17,6 +17,7 @@ services:
       - "./app/Packages/Application/Weissheiten.Neos.NodeMigration:/app/Packages/Application/Weissheiten.Neos.NodeMigration"
       - "./app/Packages/Application/Weissheiten.OAuth2.ClientInstagram:/app/Packages/Application/Weissheiten.OAuth2.ClientInstagram"
       - "./app/Packages/Plugins/Weissheiten.Neos.InstagramMedia:/app/Packages/Plugins/Weissheiten.Neos.InstagramMedia"
+      - "./app/Packages/Libraries/facebook/graph-sdk:/app/Packages/Libraries/facebook/graph-sdk"
       - "./app/Data/Logs:/app/Data/Logs"
 
   neos3-mariadb:
