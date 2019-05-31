@@ -5,12 +5,12 @@ RUN apt-get install vim -y
 
 COPY --chown=33:33 /app /app
 
-RUN apt-get install zip -y
+RUN apt-get install zip -y --allow-unauthenticated
 ##RUN apt-get install composer -y
 ##RUN composer install -d /app
 RUN apt-get update
-RUN apt-get install imagemagick -y
-RUN apt-get install php7.2-imagick -y
+RUN apt-get install imagemagick -y --allow-unauthenticated
+RUN apt-get install php7.2-imagick -y --allow-unauthenticated
 #RUN apt-get install -y software-properties-common
 
 COPY /DockerBuildConfFiles/policy.xml /etc/ImageMagick-6/policy.xml

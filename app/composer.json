@@ -47,6 +47,10 @@
         "weissheitenfacebooksdk": {
             "type": "vcs",
             "url": "https://github.com/Weissheiten/neos-facebookgraphsdk"
+        },
+        "weissheitenjonnitomaps": {
+            "type": "vcs",
+            "url": "git@github.com:Weissheiten/Jonnitto.GoogleMaps.git"
         }
     },
     "require": {
@@ -75,7 +79,8 @@
         "neos/neos-ui": "~1.0",
         "neos/neos-ui-compiled": "~1.0",
         "weissheiten/neos-mediatools": "dev-master",
-        "facebook/graph-sdk": "^5.7"
+        "facebook/graph-sdk": "^5.7",
+        "jonnitto/googlemaps": "dev-master"
     },
     "replace": {
         "typo3/neos-base-distribution": "self.version"

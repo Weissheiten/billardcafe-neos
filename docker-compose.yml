@@ -2,13 +2,14 @@ version: "2"
 
 services:
   neos3-main:
-    image: weissheiten-neos:3.3.16
+    image: weissheiten-neos:3.3.21
     ports:
       - "80:80"
     links:
       - "neos3-mariadb"
       - "neos3-mail"
     volumes:
+      - "./app/Configuration/Settings.yaml:/app/Configuration/Settings.yaml"
       - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
       - "./app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider:/app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider"
       - "./app/Packages/Application/Weissheiten.Neos.Bootstrap:/app/Packages/Application/Weissheiten.Neos.Bootstrap:"
@@ -17,6 +18,7 @@ services:
       - "./app/Packages/Application/Weissheiten.Neos.NodeMigration:/app/Packages/Application/Weissheiten.Neos.NodeMigration"
       - "./app/Packages/Application/Weissheiten.OAuth2.ClientInstagram:/app/Packages/Application/Weissheiten.OAuth2.ClientInstagram"
       - "./app/Packages/Plugins/Weissheiten.Neos.InstagramMedia:/app/Packages/Plugins/Weissheiten.Neos.InstagramMedia"
+      - "./app/Packages/Plugins/Jonnitto.GoogleMaps:/app/Packages/Plugins/Jonnitto.GoogleMaps"
       - "./app/Packages/Libraries/facebook/graph-sdk:/app/Packages/Libraries/facebook/graph-sdk"
       - "./app/Data/Logs:/app/Data/Logs"
 

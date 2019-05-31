@@ -304,14 +304,14 @@ return array (
     'doctrine/collections' => 
     array (
       'state' => 'active',
-      'packageKey' => 'Doctrine.Common.Collections',
+      'packageKey' => 'doctrine.collections',
       'packagePath' => 'Libraries/doctrine/collections/',
       'composerName' => 'doctrine/collections',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Doctrine\\Common\\Collections\\' => 'lib/',
+          'Doctrine\\Common\\Collections\\' => 'lib/Doctrine/Common/Collections',
         ),
       ),
       'packageClassInformation' => 
@@ -686,9 +686,9 @@ return array (
       'composerName' => 'imagine/imagine',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Imagine' => 'lib/',
+          'Imagine\\' => 'src/',
         ),
       ),
       'packageClassInformation' => 
@@ -951,6 +951,23 @@ return array (
         'pathAndFilename' => 'Classes/Package.php',
       ),
     ),
+    'carbon/notification' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Carbon.Notification',
+      'packagePath' => 'Carbon/Carbon.Notification/',
+      'composerName' => 'carbon/notification',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Carbon\\Notification\\' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'neos/media-browser' => 
     array (
       'state' => 'active',
@@ -1187,6 +1204,40 @@ return array (
         'psr-0' => 
         array (
           'Billardcafe\\Home' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'carbon/condition' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Carbon.Condition',
+      'packagePath' => 'Carbon/Carbon.Condition/',
+      'composerName' => 'carbon/condition',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Carbon\\Condition\\' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'jonnitto/googlemaps' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Jonnitto.GoogleMaps',
+      'packagePath' => 'Plugins/Jonnitto.GoogleMaps/',
+      'composerName' => 'jonnitto/googlemaps',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Jonnitto\\GoogleMaps\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
@@ -1682,12 +1733,12 @@ return array (
       array (
       ),
     ),
-    'mikey179/vfsStream' => 
+    'mikey179/vfsstream' => 
     array (
       'state' => 'active',
       'packageKey' => 'org.bovigo.vfs',
       'packagePath' => 'Libraries/mikey179/vfsStream/',
-      'composerName' => 'mikey179/vfsStream',
+      'composerName' => 'mikey179/vfsstream',
       'autoloadConfiguration' => 
       array (
         'psr-0' => 

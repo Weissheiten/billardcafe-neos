@@ -18,40 +18,21 @@ Neos:
       options:
         host: mail
         port: 1025
-#MOC:
-#  ImageOptimizer:
-#    useGlobalBinary: true
-#    globalBinaryPath: /usr/bin/
-#    formats:
-#      image/jpeg:
-#        enabled: true
-#        useGlobalBinary: false
-#        library: jpegtran
-#        binaryPath: jpegtran
-#        arguments: '${''-copy none -optimize '' + (progressive ? ''-progressive '' : '''') + ''-outfile '' + file + '' '' + file}'
-#        parameters:
-#          progressive: true
-#      image/png:
-#        enabled: true
-#        useGlobalBinary: false
-#        library: optipng
-#        binaryPath: optipng
-#        arguments: '${''-o'' + optimizationLevel + '' -strip all -out '' + file + '' '' + file}'
-#        parameters:
-#          optimizationLevel: 2
-#      image/gif:
-#        enabled: false
-#        useGlobalBinary: false
-#        library: gifsicle
-#        binaryPath: gifsicle/vendor/gifsicle
-#        arguments: '${''--batch -O'' + optimizationLevel + '' '' + file}'
-#        parameters:
-#          optimizationLevel: 2
-#      image/svg+xml:
-#        enabled: false
-#        useGlobalBinary: false
-#        library: svgo
-#        binaryPath: svgo/bin/svgo
-#        arguments: '${(pretty ? ''--pretty '' : '''') + file}'
-#        parameters:
-#          pretty: false
+Jonnitto:
+  GoogleMaps:
+    APIKey: AIzaSyCczl0glbOz-k9NJ1yiBiBzzYqdr-dAq4Q
+    SigningSecret: PNKxkoI5gQPTW0WoaxA8EjlEBnw=
+    includeGoogleAPI: false
+    includeFunction: false
+    includeBackendJS: false
+    includeCSS: false
+    googleAPI: '//maps.google.com/maps/api/js?key={APIKey}&callback=initJonnittoGoogleMaps'
+    googleStaticMapsAPI: '//maps.googleapis.com/maps/api/staticmap?key={APIKey}'
+    cssClasses:
+      container: false
+      map: jonnitto-googlemaps-mapview
+      streetview: jonnitto-googlemaps-streetview
+      both:
+        wrapper: jonnitto-googlemaps-both-wrapper
+        map: jonnitto-googlemaps-both-mapview
+        streetview: jonnitto-googlemaps-both-streetview
