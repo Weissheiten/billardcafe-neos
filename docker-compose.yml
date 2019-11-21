@@ -2,12 +2,12 @@ version: "2"
 
 services:
   neos3-main:
-    image: weissheiten-neos:3.3.21
+    image: weissheiten-neos:3.5.4
     ports:
       - "80:80"
     links:
       - "neos3-mariadb"
-      - "neos3-mail"
+    #  - "neos3-mail"
     volumes:
       - "./app/Configuration/Settings.yaml:/app/Configuration/Settings.yaml"
       - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
@@ -23,7 +23,7 @@ services:
       - "./app/Data/Logs:/app/Data/Logs"
 
   neos3-mariadb:
-    image: "mariadb"
+    image: "mariadb:10.1.41"
     command: "--character-set-server=utf8 --collation-server=utf8_unicode_ci"
     environment:
       MYSQL_ROOT_PASSWORD: "neos"
@@ -31,10 +31,10 @@ services:
       MYSQL_USER: "neos"
       MYSQL_PASSWORD: "neos"
 
-  neos3-mail:
-    image: mailhog/mailhog
-    ports:
-      - 8025:8025
-    environment:
-      - VIRTUAL_HOST=mail.neos
-      - VIRTUAL_PORT=8025
+  #neos3-mail:
+  #  image: mailhog/mailhog
+  #  ports:
+  #    - 8025:8025
+  #  environment:
+  #    - VIRTUAL_HOST=mail.neos
+  #    - VIRTUAL_PORT=8025

@@ -355,14 +355,14 @@ return array (
     'doctrine/lexer' => 
     array (
       'state' => 'active',
-      'packageKey' => 'Doctrine.Common.Lexer',
+      'packageKey' => 'doctrine.lexer',
       'packagePath' => 'Libraries/doctrine/lexer/',
       'composerName' => 'doctrine/lexer',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Doctrine\\Common\\Lexer\\' => 'lib/',
+          'Doctrine\\Common\\Lexer\\' => 'lib/Doctrine/Common/Lexer',
         ),
       ),
       'packageClassInformation' => 
@@ -1005,23 +1005,6 @@ return array (
         'pathAndFilename' => 'Classes/Package.php',
       ),
     ),
-    'webmozart/assert' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'webmozart.assert',
-      'packagePath' => 'Libraries/webmozart/assert/',
-      'composerName' => 'webmozart/assert',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Webmozart\\Assert\\' => 'src/',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
     'neos/nodetypes-basemixins' => 
     array (
       'state' => 'active',
@@ -1033,58 +1016,6 @@ return array (
         'psr-4' => 
         array (
           'Neos\\NodeTypes\\BaseMixins\\' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-      'error-sorting-limit-reached' => true,
-    ),
-    'neos/nodetypes-form' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Neos.NodeTypes.Form',
-      'packagePath' => 'Application/Neos.NodeTypes.Form/',
-      'composerName' => 'neos/nodetypes-form',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Neos\\NodeTypes\\Form\\' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'flowpack/neos-matomo' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Flowpack.Neos.Matomo',
-      'packagePath' => 'Application/Flowpack.Neos.Matomo/',
-      'composerName' => 'flowpack/neos-matomo',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Flowpack\\Neos\\Matomo\\' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'flowpack/neos-frontendlogin' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Flowpack.Neos.FrontendLogin',
-      'packagePath' => 'Plugins/Flowpack.Neos.FrontendLogin/',
-      'composerName' => 'flowpack/neos-frontendlogin',
-      'autoloadConfiguration' => 
-      array (
-        'psr-0' => 
-        array (
-          'Flowpack\\Neos\\FrontendLogin' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
@@ -1176,6 +1107,23 @@ return array (
       array (
       ),
     ),
+    'neos/nodetypes-form' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Neos.NodeTypes.Form',
+      'packagePath' => 'Application/Neos.NodeTypes.Form/',
+      'composerName' => 'neos/nodetypes-form',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Neos\\NodeTypes\\Form\\' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'neos/nodetypes' => 
     array (
       'state' => 'active',
@@ -1193,6 +1141,40 @@ return array (
       array (
       ),
     ),
+    'weissheiten/neos-instagrammedia' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Weissheiten.Neos.InstagramMedia',
+      'packagePath' => 'Plugins/Weissheiten.Neos.InstagramMedia/',
+      'composerName' => 'weissheiten/neos-instagrammedia',
+      'autoloadConfiguration' => 
+      array (
+        'psr-0' => 
+        array (
+          'Weissheiten\\Neos\\InstagramMedia' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'flowpack/neos-matomo' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Flowpack.Neos.Matomo',
+      'packagePath' => 'Application/Flowpack.Neos.Matomo/',
+      'composerName' => 'flowpack/neos-matomo',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Flowpack\\Neos\\Matomo\\' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'weissheiten/billardcafe-home' => 
     array (
       'state' => 'active',
@@ -1204,6 +1186,23 @@ return array (
         'psr-0' => 
         array (
           'Billardcafe\\Home' => 'Classes',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'flowpack/neos-frontendlogin' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Flowpack.Neos.FrontendLogin',
+      'packagePath' => 'Plugins/Flowpack.Neos.FrontendLogin/',
+      'composerName' => 'flowpack/neos-frontendlogin',
+      'autoloadConfiguration' => 
+      array (
+        'psr-0' => 
+        array (
+          'Flowpack\\Neos\\FrontendLogin' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
@@ -1261,17 +1260,17 @@ return array (
       array (
       ),
     ),
-    'weissheiten/neos-instagrammedia' => 
+    'webmozart/assert' => 
     array (
       'state' => 'active',
-      'packageKey' => 'Weissheiten.Neos.InstagramMedia',
-      'packagePath' => 'Plugins/Weissheiten.Neos.InstagramMedia/',
-      'composerName' => 'weissheiten/neos-instagrammedia',
+      'packageKey' => 'webmozart.assert',
+      'packagePath' => 'Libraries/webmozart/assert/',
+      'composerName' => 'webmozart/assert',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Weissheiten\\Neos\\InstagramMedia' => 'Classes',
+          'Webmozart\\Assert\\' => 'src/',
         ),
       ),
       'packageClassInformation' => 
@@ -1649,10 +1648,7 @@ return array (
       array (
         'psr-4' => 
         array (
-          'phpDocumentor\\Reflection\\' => 
-          array (
-            0 => 'src',
-          ),
+          'phpDocumentor\\Reflection\\' => 'src/',
         ),
       ),
       'packageClassInformation' => 
@@ -1669,10 +1665,7 @@ return array (
       array (
         'psr-4' => 
         array (
-          'phpDocumentor\\Reflection\\' => 
-          array (
-            0 => 'src/',
-          ),
+          'phpDocumentor\\Reflection\\' => 'src',
         ),
       ),
       'packageClassInformation' => 
@@ -1707,9 +1700,9 @@ return array (
       'composerName' => 'phpspec/prophecy',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Prophecy\\' => 'src/',
+          'Prophecy\\' => 'src/Prophecy',
         ),
       ),
       'packageClassInformation' => 
@@ -1737,7 +1730,7 @@ return array (
     array (
       'state' => 'active',
       'packageKey' => 'org.bovigo.vfs',
-      'packagePath' => 'Libraries/mikey179/vfsStream/',
+      'packagePath' => 'Libraries/mikey179/vfsstream/',
       'composerName' => 'mikey179/vfsstream',
       'autoloadConfiguration' => 
       array (

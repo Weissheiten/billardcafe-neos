@@ -20,8 +20,8 @@ Neos:
         port: 1025
 Jonnitto:
   GoogleMaps:
-    APIKey: --- API Key ---
-    SigningSecret: --- SIGNING SECRET ---
+    APIKey: '--- API Key ---'
+    SigningSecret: '--- SIGNING SECRET ---'
     includeGoogleAPI: false
     includeFunction: false
     includeBackendJS: false
