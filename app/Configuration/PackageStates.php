@@ -296,6 +296,10 @@ return array (
         array (
           'Ramsey\\Uuid\\' => 'src/',
         ),
+        'files' => 
+        array (
+          0 => 'src/functions.php',
+        ),
       ),
       'packageClassInformation' => 
       array (
@@ -555,40 +559,6 @@ return array (
       array (
       ),
     ),
-    'zendframework/zend-eventmanager' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'zendframework.zendeventmanager',
-      'packagePath' => 'Libraries/zendframework/zend-eventmanager/',
-      'composerName' => 'zendframework/zend-eventmanager',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Zend\\EventManager\\' => 'src/',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'zendframework/zend-code' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'zendframework.zendcode',
-      'packagePath' => 'Libraries/zendframework/zend-code/',
-      'composerName' => 'zendframework/zend-code',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Zend\\Code\\' => 'src/',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
     'ocramius/package-versions' => 
     array (
       'state' => 'active',
@@ -698,14 +668,14 @@ return array (
     'behat/transliterator' => 
     array (
       'state' => 'active',
-      'packageKey' => 'Behat.Transliterator',
+      'packageKey' => 'behat.transliterator',
       'packagePath' => 'Libraries/behat/transliterator/',
       'composerName' => 'behat/transliterator',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Behat\\Transliterator' => 'src/',
+          'Behat\\Transliterator\\' => 'src/Behat/Transliterator',
         ),
       ),
       'packageClassInformation' => 
@@ -949,6 +919,44 @@ return array (
       array (
         'className' => 'Neos\\Fusion\\Package',
         'pathAndFilename' => 'Classes/Package.php',
+      ),
+    ),
+    'ralouphie/getallheaders' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'ralouphie.getallheaders',
+      'packagePath' => 'Libraries/ralouphie/getallheaders/',
+      'composerName' => 'ralouphie/getallheaders',
+      'autoloadConfiguration' => 
+      array (
+        'files' => 
+        array (
+          0 => 'src/getallheaders.php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'guzzlehttp/psr7' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'guzzlehttp.psr7',
+      'packagePath' => 'Libraries/guzzlehttp/psr7/',
+      'composerName' => 'guzzlehttp/psr7',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'GuzzleHttp\\Psr7\\' => 'src/',
+        ),
+        'files' => 
+        array (
+          0 => 'src/functions_include.php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
       ),
     ),
     'carbon/notification' => 
@@ -1200,9 +1208,9 @@ return array (
       'composerName' => 'flowpack/neos-frontendlogin',
       'autoloadConfiguration' => 
       array (
-        'psr-0' => 
+        'psr-4' => 
         array (
-          'Flowpack\\Neos\\FrontendLogin' => 'Classes',
+          'Flowpack\\Neos\\FrontendLogin\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
@@ -1682,10 +1690,7 @@ return array (
       array (
         'psr-4' => 
         array (
-          'phpDocumentor\\Reflection\\' => 
-          array (
-            0 => 'src/',
-          ),
+          'phpDocumentor\\Reflection\\' => 'src',
         ),
       ),
       'packageClassInformation' => 
@@ -1737,6 +1742,61 @@ return array (
         'psr-0' => 
         array (
           'org\\bovigo\\vfs\\' => 'src/main/php',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'laminas/laminas-zendframework-bridge' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'laminas.laminaszendframeworkbridge',
+      'packagePath' => 'Libraries/laminas/laminas-zendframework-bridge/',
+      'composerName' => 'laminas/laminas-zendframework-bridge',
+      'autoloadConfiguration' => 
+      array (
+        'files' => 
+        array (
+          0 => 'src/autoload.php',
+        ),
+        'psr-4' => 
+        array (
+          'Laminas\\ZendFrameworkBridge\\' => 'src//',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'laminas/laminas-eventmanager' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'laminas.laminaseventmanager',
+      'packagePath' => 'Libraries/laminas/laminas-eventmanager/',
+      'composerName' => 'laminas/laminas-eventmanager',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Laminas\\EventManager\\' => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'laminas/laminas-code' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'laminas.laminascode',
+      'packagePath' => 'Libraries/laminas/laminas-code/',
+      'composerName' => 'laminas/laminas-code',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Laminas\\Code\\' => 'src/',
         ),
       ),
       'packageClassInformation' => 
@@ -1828,6 +1888,23 @@ return array (
         'psr-0' => 
         array (
           'Neos\\Neos\\Ui\\Compiled' => 'Classes/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
+    'neos/neos-ui' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'Neos.Neos.Ui',
+      'packagePath' => 'Application/Neos.Neos.Ui/',
+      'composerName' => 'neos/neos-ui',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Neos\\Neos\\Ui\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 

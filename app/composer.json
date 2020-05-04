@@ -12,6 +12,9 @@
         "source": "https://github.com/neos/neos-base-distribution"
     },
     "config": {
+        "platform": {
+            "php": "7.2"
+        },
         "vendor-dir": "Packages/Libraries",
         "bin-dir": "bin"
     },
@@ -63,7 +66,7 @@
         "weissheiten/oauth2-clientinstagram": "^1.0",
         "weissheiten/neos-bootstrap": "~2.1.2",
         "weissheiten/neos-news": "~2.2.2",
-        "weissheiten/billardcafe-home": "^3.8.3",
+        "weissheiten/billardcafe-home": "^3",
         "weissheiten/neos-instagrammedia": "~1.1",
         "weissheiten/neos-nodemigration": "^1.0",
         "weissheiten/neos-facebookgraphsdk": "dev-master",
@@ -72,11 +75,12 @@
         "moc/imageoptimizer": "^3.0",
         "ttree/stylesheet": "^3.0",
         "ttree/script": "^3.0",
-        "neos/neos-ui": "~1.0",
-        "neos/neos-ui-compiled": "~1.0",
+        "neos/neos-ui": "~2.0",
+        "neos/neos-ui-compiled": "~2.0",
         "weissheiten/neos-mediatools": "dev-master",
         "facebook/graph-sdk": "^5.7",
-        "jonnitto/googlemaps": "~3.0"
+        "jonnitto/googlemaps": "~3.0",
+        "php": "~7.2"
     },
     "replace": {
         "typo3/neos-base-distribution": "self.version"

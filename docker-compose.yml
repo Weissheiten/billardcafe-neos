@@ -2,7 +2,7 @@ version: "2"
 
 services:
   neos3-main:
-    image: weissheiten-neos:3.5.4
+    image: "weissheiten-neos:3.11"
     ports:
       - "80:80"
     links:
@@ -23,7 +23,7 @@ services:
       - "./app/Data/Logs:/app/Data/Logs"
 
   neos3-mariadb:
-    image: "mariadb:10.1.41"
+    image: "mariadb:10.1.44"
     command: "--character-set-server=utf8 --collation-server=utf8_unicode_ci"
     environment:
       MYSQL_ROOT_PASSWORD: "neos"
