@@ -8,7 +8,7 @@ Neos:
         dbname: neos
         user: neos
         password: neos
-        host: neos3-mariadb
+        host: neos5-mariadb
       doctrine:
         sqlLogger: Neos\Flow\Persistence\Doctrine\Logging\SqlLogger
   SwiftMailer:

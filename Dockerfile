@@ -1,4 +1,7 @@
-FROM quay.io/yeebase/neos-base:7.2
+#FROM yeebase:7.4
+FROM quay.io/yeebase/neos-base:7.3
+
+COPY /DockerBuildConfFiles/nginx /etc/nginx
 
 RUN apt-get update
 RUN apt-get install vim -y
@@ -10,7 +13,7 @@ RUN apt-get install zip -y --allow-unauthenticated
 ##RUN composer install -d /app
 RUN apt-get update
 RUN apt-get install imagemagick -y --allow-unauthenticated
-RUN apt-get install php7.2-imagick -y --allow-unauthenticated
+RUN apt-get install php7.3-imagick -y --allow-unauthenticated
 #RUN apt-get install -y software-properties-common
 
 COPY /DockerBuildConfFiles/policy.xml /etc/ImageMagick-6/policy.xml

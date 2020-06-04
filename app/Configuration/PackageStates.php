@@ -333,6 +333,7 @@ return array (
         'psr-4' => 
         array (
           'Doctrine\\Common\\Inflector\\' => 'lib/Doctrine/Common/Inflector',
+          'Doctrine\\Inflector\\' => 'lib/Doctrine/Inflector',
         ),
       ),
       'packageClassInformation' => 
@@ -976,6 +977,23 @@ return array (
       array (
       ),
     ),
+    'webmozart/assert' => 
+    array (
+      'state' => 'active',
+      'packageKey' => 'webmozart.assert',
+      'packagePath' => 'Libraries/webmozart/assert/',
+      'composerName' => 'webmozart/assert',
+      'autoloadConfiguration' => 
+      array (
+        'psr-4' => 
+        array (
+          'Webmozart\\Assert\\' => 'src/',
+        ),
+      ),
+      'packageClassInformation' => 
+      array (
+      ),
+    ),
     'neos/media-browser' => 
     array (
       'state' => 'active',
@@ -1149,23 +1167,6 @@ return array (
       array (
       ),
     ),
-    'weissheiten/neos-instagrammedia' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Weissheiten.Neos.InstagramMedia',
-      'packagePath' => 'Plugins/Weissheiten.Neos.InstagramMedia/',
-      'composerName' => 'weissheiten/neos-instagrammedia',
-      'autoloadConfiguration' => 
-      array (
-        'psr-0' => 
-        array (
-          'Weissheiten\\Neos\\InstagramMedia' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
     'flowpack/neos-matomo' => 
     array (
       'state' => 'active',
@@ -1262,23 +1263,6 @@ return array (
         'psr-4' => 
         array (
           'MOC\\NotFound\\' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'webmozart/assert' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'webmozart.assert',
-      'packagePath' => 'Libraries/webmozart/assert/',
-      'composerName' => 'webmozart/assert',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Webmozart\\Assert\\' => 'src/',
         ),
       ),
       'packageClassInformation' => 
@@ -1803,63 +1787,6 @@ return array (
       array (
       ),
     ),
-    'facebook/graph-sdk' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'facebook.graphsdk',
-      'packagePath' => 'Libraries/facebook/graph-sdk/',
-      'composerName' => 'facebook/graph-sdk',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Facebook\\' => 'src/Facebook/',
-        ),
-        'files' => 
-        array (
-          0 => 'src/Facebook/polyfills.php',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'neos/kickstarter' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Neos.Kickstarter',
-      'packagePath' => 'Framework/Neos.Kickstarter/',
-      'composerName' => 'neos/kickstarter',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Neos\\Kickstarter\\' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-        'className' => 'Neos\\Kickstarter\\Package',
-        'pathAndFilename' => 'Classes/Package.php',
-      ),
-    ),
-    'flowpack/oauth2-client' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Flowpack.OAuth2.Client',
-      'packagePath' => 'Application/Flowpack.OAuth2.Client/',
-      'composerName' => 'flowpack/oauth2-client',
-      'autoloadConfiguration' => 
-      array (
-        'psr-0' => 
-        array (
-          'Flowpack\\OAuth2\\Client' => 'Classes/',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
     'moc/imageoptimizer' => 
     array (
       'state' => 'active',
@@ -1981,23 +1908,6 @@ return array (
       array (
       ),
     ),
-    'neos/site-kickstarter' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Neos.SiteKickstarter',
-      'packagePath' => 'Application/Neos.SiteKickstarter/',
-      'composerName' => 'neos/site-kickstarter',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Neos\\SiteKickstarter\\' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
     'neos/swiftmailer' => 
     array (
       'state' => 'active',
@@ -2083,23 +1993,6 @@ return array (
       array (
       ),
     ),
-    'weissheiten/flow-wifiguestcredentialsprovider' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Weissheiten.Flow.WiFiGuestCredentialsProvider',
-      'packagePath' => 'Application/Weissheiten.Flow.WiFiGuestCredentialsProvider/',
-      'composerName' => 'weissheiten/flow-wifiguestcredentialsprovider',
-      'autoloadConfiguration' => 
-      array (
-        'psr-0' => 
-        array (
-          'Weissheiten\\Flow\\WiFiGuestCredentialsProvider' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
     'weissheiten/neos-bootstrap' => 
     array (
       'state' => 'active',
@@ -2111,23 +2004,6 @@ return array (
         'psr-0' => 
         array (
           'Weissheiten\\Neos\\Bootstrap' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'weissheiten/neos-facebookgraphsdk' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Weissheiten.Neos.FacebookGraphSDK',
-      'packagePath' => 'Application/Weissheiten.Neos.FacebookGraphSDK/',
-      'composerName' => 'weissheiten/neos-facebookgraphsdk',
-      'autoloadConfiguration' => 
-      array (
-        'psr-4' => 
-        array (
-          'Weissheiten\\Neos\\FacebookGraphSDK\\' => 'Classes',
         ),
       ),
       'packageClassInformation' => 
@@ -2179,23 +2055,6 @@ return array (
         'psr-0' => 
         array (
           'Weissheiten\\Neos\\News' => 'Classes',
-        ),
-      ),
-      'packageClassInformation' => 
-      array (
-      ),
-    ),
-    'weissheiten/oauth2-clientinstagram' => 
-    array (
-      'state' => 'active',
-      'packageKey' => 'Weissheiten.OAuth2.ClientInstagram',
-      'packagePath' => 'Application/Weissheiten.OAuth2.ClientInstagram/',
-      'composerName' => 'weissheiten/oauth2-clientinstagram',
-      'autoloadConfiguration' => 
-      array (
-        'psr-0' => 
-        array (
-          'Weissheiten\\OAuth2\\ClientInstagram' => 'Classes/',
         ),
       ),
       'packageClassInformation' => 

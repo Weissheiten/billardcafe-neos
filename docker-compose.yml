@@ -1,35 +1,28 @@
 version: "2"
 
 services:
-  neos3-main:
-    image: "weissheiten-neos:3.11"
+  neos5-main:
+    image: "weissheiten-neos:upgradeBaseNeos3To5-N4"
     ports:
       - "80:80"
     links:
-      - "neos3-mariadb"
+      - "neos5-mariadb"
     #  - "neos3-mail"
     volumes:
       - "./app/Configuration/Settings.yaml:/app/Configuration/Settings.yaml"
-      - "./app/Packages/Sites/Billardcafe.Home:/app/Packages/Sites/Billardcafe.Home"
-      - "./app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider:/app/Packages/Application/Weissheiten.Flow.WiFiGuestCredentialsProvider"
-      - "./app/Packages/Application/Weissheiten.Neos.Bootstrap:/app/Packages/Application/Weissheiten.Neos.Bootstrap:"
-      - "./app/Packages/Application/Weissheiten.Neos.MediaTools:/app/Packages/Application/Weissheiten.Neos.MediaTools"
-      - "./app/Packages/Application/Weissheiten.Neos.News:/app/Packages/Application/Weissheiten.Neos.News"
-      - "./app/Packages/Application/Weissheiten.Neos.NodeMigration:/app/Packages/Application/Weissheiten.Neos.NodeMigration"
-      - "./app/Packages/Application/Weissheiten.OAuth2.ClientInstagram:/app/Packages/Application/Weissheiten.OAuth2.ClientInstagram"
-      - "./app/Packages/Plugins/Weissheiten.Neos.InstagramMedia:/app/Packages/Plugins/Weissheiten.Neos.InstagramMedia"
-      - "./app/Packages/Plugins/Jonnitto.GoogleMaps:/app/Packages/Plugins/Jonnitto.GoogleMaps"
-      - "./app/Packages/Libraries/facebook/graph-sdk:/app/Packages/Libraries/facebook/graph-sdk"
       - "./app/Data/Logs:/app/Data/Logs"
+      - "./app/DistributionPackages:/app/DistributionPackages"
 
-  neos3-mariadb:
-    image: "mariadb:10.1.44"
-    command: "--character-set-server=utf8 --collation-server=utf8_unicode_ci"
+  neos5-mariadb:
+    image: "mariadb:10.3.22"
+    command: "--character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci"
     environment:
       MYSQL_ROOT_PASSWORD: "neos"
       MYSQL_DATABASE: "neos"
       MYSQL_USER: "neos"
       MYSQL_PASSWORD: "neos"
+    ports:
+      - "13306:3306"
 
   #neos3-mail:
   #  image: mailhog/mailhog

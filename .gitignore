@@ -5,6 +5,7 @@
 /composer.lock
 /app/bin
 /app/Data
+/app/DistributionPackages
 /app/Packages
 /app/Web
 /app/.editorconfig
