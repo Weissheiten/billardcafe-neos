@@ -2,7 +2,7 @@ version: "2"
 
 services:
   neos5-main:
-    image: "weissheiten-neos:upgradeBaseNeos3To5-N4"
+    image: "weissheiten-neos:upgradeBaseNeos3To5-N5"
     ports:
       - "80:80"
     links:

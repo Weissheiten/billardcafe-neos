@@ -25,22 +25,23 @@
         }
     },
     "require": {
-        "neos/neos": "~4.0.0",
-        "neos/nodetypes": "~4.0.0",
+        "neos/neos": "~5.0.0",
+        "neos/nodetypes": "~5.0.0",
 
-        "neos/neos-ui": "~4.0",
-        "neos/neos-ui-compiled": "~4.0",
+        "neos/neos-ui": "~5.0",
+        "neos/neos-ui-compiled": "~5.0",
 
-        "neos/seo": "~2.0.0",
-        "neos/setup": "~4.0",
+        "neos/seo": "~3.0.0",
+        "neos/setup": "~4.1",
 
-        "neos/redirecthandler-neosadapter": "~2.0",
-        "neos/redirecthandler-databasestorage": "~2.0 || ~3.0 ",
+        "neos/redirecthandler-neosadapter": "~4.0",
+        "neos/redirecthandler-databasestorage": "~4.0 ",
+        "neos/redirecthandler-ui": "~2.0",
 
-        "neos/swiftmailer": "~6.0.0",
+        "neos/swiftmailer": "~7.0",
 
         "moc/notfound": "~3.0",
-        "moc/imageoptimizer": "^3.0",
+        "moc/imageoptimizer": "^4.0",
 
         "ttree/stylesheet": "^3.0",
         "ttree/script": "^3.0",
